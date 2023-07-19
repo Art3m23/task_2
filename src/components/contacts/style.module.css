@@ -1,0 +1,65 @@
+.contacts_footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 143px;
+  height: 62px;
+  margin: 0 0 18px 0;
+}
+
+.contacts_header {
+  display: flex;
+  justify-content: space-between;
+  width: 310px;
+  margin: 15px 0 0 0;
+}
+
+.contacts_header .messengers {
+  width: 120px;
+}
+
+.contacts_footer .messengers {
+  width: 80px;
+}
+
+.phonenumber {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.list_item {
+  width: 20px;
+  height: 20px;
+}
+
+@media (width: 320px) {
+  .contacts_header {
+    display: none;
+  }
+
+  .contacts_footer {
+    align-items: flex-start;
+    height: 51px;
+    margin: 0 0 10px 0;
+  }
+
+  .list_item,
+  .list_item img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .contacts_footer .messengers {
+    width: 92px;
+  }
+}

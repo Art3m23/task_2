@@ -1,0 +1,109 @@
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
+  width: 100%;
+  height: 73px;
+  margin: 0 auto;
+  padding-top: 46px;
+}
+
+.logo {
+  width: 165px;
+  height: 58px;
+  margin: 11px 0 0 0;
+}
+
+.logo_icon {
+  width: 140px;
+  height: 24px;
+  margin-bottom: 10px;
+  background-image: url(../../../public/img/logo.svg);
+}
+
+.logo_text {
+  font-family: Montserrat, sans-serif;
+  font-size: 10px;
+  font-weight: 300;
+  margin: 10px 0 0 0;
+}
+
+.navbar {
+  width: 503px;
+  margin: 15px 108px 0 0;
+}
+
+.nav_list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 500;
+  list-style-type: none;
+}
+
+.purple_circle {
+  position: absolute;
+  top: -154px;
+  left: 452px;
+  width: 259px;
+  height: 259px;
+  border-radius: 259px;
+  background-color: #833AB4;
+  filter: blur(196px);
+}
+
+.purple_ball {
+  position: absolute;
+  top: -2px;
+  left: 703px;
+  width: 94px;
+  height: 81px;
+  background-image: url(../../../public/img/purple_ball.png);
+  background-size: cover;
+}
+
+.red_ball {
+  position: absolute;
+  top: 72px;
+  left: 356px;
+  width: 117px;
+  height: 117px;
+  background-image: url(../../../public/img/red_ball.png);
+
+}
+
+@media (width: 320px) {
+  .header {
+    position: sticky;
+    top: 0;
+    max-width: 320px;
+    width: 100%;
+    height: 15px;
+    margin: 0;
+    padding: 20px 0;
+    background-color: #0E1014;
+    z-index: 999;
+  }
+
+  .navbar {
+    width: 288px;
+    margin: 0 auto;
+  }
+  
+  .nav_list {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  .purple_circle,
+  .purple_ball,
+  .red_ball,
+  .logo,
+  .nav_list li:last-child {
+    display: none;
+  }
+}
